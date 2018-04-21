@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.controller.form.Account;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +18,7 @@ public class HelloController {
     }
 
     @GetMapping("/login")
-    public String logIn(){
+    public String logIn(Account account){
         return "login";
     }
 }
